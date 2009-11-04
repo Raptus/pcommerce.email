@@ -1,13 +1,13 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
-    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:gs="http://namespaces.zope.org/genericsetup"
     i18n_domain="pcommerce.email">
 
   <include package="pcommerce.core" />
   <include package=".browser" />
 
   <!-- Register the installation GenericSetup extension profile -->
-  <genericsetup:registerProfile
+  <gs:registerProfile
       name="default"
       title="eMail Payment (PCommerce Plugin)"
       directory="profiles/default"
