@@ -1,0 +1,34 @@
+<tal:billing i18n:domain="pcommerce.email"
+             tal:define="errors view/errors|nothing;
+                         address view/address|nothing;
+                         as_delivery view/as_delivery|nothing;
+                         message view/order/message|nothing;
+                         ">
+<fieldset>
+  <legend i18n:translate="">Billing address</legend>
+  
+  <div class="field">
+    <label>
+      <input type="checkbox" class="noborder" value="1" id="as_delivery" name="as_delivery"
+             tal:attributes="checked python:as_delivery and 'checked' or ''"> <tal:label i18n:translate="">equal to delivery</tal:label>
+    </label>
+  </div>
+
+  <metal:address use-macro="context/@@pcommerce_macros/addressForm" />
+</fieldset>
+<div class="field"
+     tal:attributes="class python:'field'+(errors.has_key('message') and ' error' or '')">
+  <label i18n:translate=""
+         for="message">
+      Message
+  </label>
+  <div tal:condition="python:errors.has_key('message')"
+       tal:content="errors/message|nothing">
+      The Error
+  </div>
+  <div class="widget">
+      <textarea id="message" name="message" rows="10"
+                tal:content="request/message|message|nothing" />
+  </div>
+</div>
+</tal:billing>

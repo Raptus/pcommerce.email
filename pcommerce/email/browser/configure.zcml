@@ -1,0 +1,47 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="plone">
+
+    <browser:page
+        for="Products.CMFCore.interfaces.ISiteRoot"
+        name="pcommerce_email_form"
+        class=".pre.EMailPaymentForm"
+        permission="zope2.View"
+        />
+
+    <browser:page
+        for="Products.CMFCore.interfaces.ISiteRoot"
+        name="pcommerce_email_info"
+        class=".info.EMailPaymentInfo"
+        permission="zope2.View"
+        />
+
+    <browser:page
+        for="Products.CMFCore.interfaces.ISiteRoot"
+        name="processEMailPCommercePayment"
+        class=".process.ProcessEMailPCommercePayment"
+        permission="cmf.ManagePortal"
+        />
+
+    <browser:resource
+        name="pcommerce.email.css"
+        image="stylesheets/pcommerce.email.css"
+        />
+
+    <browser:resource
+        name="pcommerce.email.js"
+        image="javascripts/pcommerce.email.js"
+        />
+
+    <browser:resource
+        name="pcommerce_email_icon.gif"
+        image="images/email_icon.gif"
+        />
+
+    <browser:resource
+        name="pcommerce_email_logo.gif"
+        image="images/email_logo.gif"
+        />
+
+</configure>

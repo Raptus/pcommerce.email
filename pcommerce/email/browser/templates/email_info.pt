@@ -1,0 +1,19 @@
+<tal:defines define="address view/address"
+             i18n:domain="pcommerce.email">
+  <fieldset>
+    <legend i18n:translate="">Billing address</legend>
+          
+    <a href="@@checkout?pcommerce.pre" class="editLink" title="Edit billing address"
+       i18n:attributes="title">
+      <img src="edit.gif" alt="Edit" i18n:translate="alt label_edit" i18n:domain="plone" /> 
+    </a>
+          
+    <metal:address use-macro="context/@@pcommerce_macros/addressInfo" />
+  </fieldset>
+  
+  <textarea readonly="readonly" rows="8" class="message"
+            tal:condition="view/message" 
+            tal:content="view/message">
+    Message
+  </textarea>
+</tal:defines>

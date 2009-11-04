@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<componentregistry>
+  <utilities>
+    <utility
+      interface="pcommerce.core.interfaces.IPaymentMethod"
+      factory="pcommerce.email.utility.eMailPaymentPCommercePluginUtility"
+      name="eMailPayment" />
+  </utilities>
+</componentregistry>
