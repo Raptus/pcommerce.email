@@ -1,6 +1,11 @@
 Changelog
 =========
 
+0.3
+---
+
+* bugfix in configure.zcml
+
 0.2
 ---
 

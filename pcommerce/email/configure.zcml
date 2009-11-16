@@ -4,7 +4,7 @@
     xmlns:gs="http://namespaces.zope.org/genericsetup"
     i18n_domain="pcommerce.email">
 
-  <five:registerPackage package="." initialize=".initialize" />
+  <five:registerPackage package="." />
 
   <include package="pcommerce.core" />
   <include package=".browser" />
