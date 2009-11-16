@@ -1,8 +1,13 @@
 Changelog
 =========
 
-0.1 - Unreleased
-----------------
+0.2
+---
+
+* added five:registerPackage to support i18n
+
+0.1
+---
 
 * Initial release
 
