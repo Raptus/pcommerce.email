@@ -1,7 +1,10 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
     xmlns:gs="http://namespaces.zope.org/genericsetup"
     i18n_domain="pcommerce.email">
+
+  <five:registerPackage package="." initialize=".initialize" />
 
   <include package="pcommerce.core" />
   <include package=".browser" />
