@@ -1,6 +1,12 @@
 Changelog
 =========
 
+0.5
+---
+
+* Added deprecation info to README
+* Added version bound dependency for pcommerce.core 0.4
+
 0.4
 ---
 

@@ -24,7 +24,7 @@ setup(name='pcommerce.email',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'pcommerce.core',
+	  'pcommerce.core==0.4',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
